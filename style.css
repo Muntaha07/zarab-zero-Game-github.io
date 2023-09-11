@@ -2,9 +2,14 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: dimgray;
+    /* background-color: dimgray; */
 }
-
+body video{
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+}
 nav{
     background-color: rgb(37, 9, 37);
     color: white;
@@ -32,10 +37,12 @@ nav ul{
     grid-template-columns: repeat(3, 10vw);
     font-family: 'Roboto', sans-serif;
     position: relative;
+    border-radius: 48px;
+    border: 5px solid #BC6DF2;
 }
 
 .box{
-    border: 2px solid black;
+    border: 2px solid #7A52C9;
     font-size: 8vw;
     cursor: pointer;
     display: flex;
@@ -48,7 +55,9 @@ nav ul{
 }
 
 .info {
-    font-size: 22px;
+    font-size: 30px;
+    color: cornsilk;
+    position: relative;
 }
 
 .gameInfo{
@@ -57,12 +66,24 @@ nav ul{
 }
 
 .gameInfo h1{
-    font-size: 2.5rem;
+    font-size: 5.5vw;
+    font-weight: 900;
+    background-image: url("download.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    z-index: 1 ;
+    
 }
 
 .imgbox img{
     width: 0;
     transition: width 1s ease-in-out;
+    position: relative;
+    z-index: 2;
 }
 
 .br-0{
@@ -90,6 +111,8 @@ nav ul{
     font-family: 'Baloo Bhaina 2';
     font-size: 15px;
     font-weight: bolder;
+    height: 64px;
+    position: relative;
 }
 
 .line{
@@ -125,11 +148,17 @@ footer {
 }
 
 .col-md-6 {
-    width: 50%;
-    padding: 0 15px;
+    display: flex;
+    width: 100%;
+    /* padding: 0 349px; */
     box-sizing: border-box;
     font-size: 15px;
-    color: aquamarine;
+    color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 3;
+
   }
 
 
