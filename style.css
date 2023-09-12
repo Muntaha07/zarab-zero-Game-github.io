@@ -24,7 +24,7 @@ nav{
     padding: 0 12px;
     font-family: 'Roboto', sans-serif;
     display: flex;
-    width: 100%;
+    width: 95%;
     justify-content: center;
     color: orange;
 }
@@ -71,6 +71,7 @@ nav ul{
 .gameInfo{
     padding: 0 34px;
     font-family: 'Baloo Bhaina 2', cursive;
+    height: fit-content;
 }
 
 .gameInfo h1{
@@ -146,6 +147,9 @@ nav ul{
     .container { 
         grid-template-rows: repeat(3, 20vw);
         grid-template-columns: repeat(3, 20vw);
+    }
+    body video{
+    height: 100vh;
     }
 }
 
