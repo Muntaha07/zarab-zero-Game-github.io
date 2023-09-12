@@ -1,4 +1,4 @@
-console.log("Welcome to Tic Tac Toe")
+console.log("Welcome to Zarab zero Game")
 let music = new Audio("music.mp3")
 let audioTurn = new Audio("ting.mp3")
 let gameover = new Audio("gameover.mp3")
@@ -66,3 +66,9 @@ reset.addEventListener('click', ()=>{
     document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "0px"
 })
 
+
+
+setTimeout( function ()  {
+    document.querySelector("video").style.transform = 'scale(1)';
+    
+}, 3000);

@@ -3,22 +3,30 @@
     margin: 0;
     padding: 0;
     /* background-color: dimgray; */
+    
 }
 body video{
     position: absolute;
     width: 100%;
     height: fit-content;
     object-fit: cover;
+    transition: all 4s ease-in;
+    transform: scale(0);
+    
 }
 nav{
     background-color: rgb(37, 9, 37);
-    color: white;
+    
     height: 65px;
     font-size: 27px;
     display: flex;
     align-items: center;
     padding: 0 12px;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: orange;
 }
 
 nav ul{
